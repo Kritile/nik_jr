@@ -1,0 +1,19 @@
+@function to-vw($val, $res: 19.2, $int: false) {
+    @if ($int) {
+      @return ($val / $res);
+    } @else {
+      @return #{($val / $res) + 'vw'};
+    }
+  }
+  
+  @function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+      @return $number / ($number * 0 + 1);
+    }
+  
+    @return $number;
+  }
+  
+  @function vh($number) {
+    @return calc(var(--vh, 1vh) * #{$number});
+  }

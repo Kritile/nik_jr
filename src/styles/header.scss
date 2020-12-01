@@ -1,0 +1,64 @@
+@import 'utils.scss';
+@import 'fonts.scss';
+* {
+    font-family: 'SF Pro';
+}
+body{
+    margin: unset;
+}
+header a {
+    color: black;
+    text-decoration: none;
+}
+header a:visited{
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.header-right .button{
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.header-left a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+.header-left, .phone, .email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+.icon img{
+    width: 18px;
+    height: 18px;
+}
+.phone img, .email img{
+    margin-right: 8px;
+}
+.btn-secondary{
+    background: white !important; 
+    border: none;
+}
+.dropdown-toggle::after{
+    background-image: url("/src/media/arrow.svg");
+    color: black;
+}
