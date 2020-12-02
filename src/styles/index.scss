@@ -1,7 +1,7 @@
 @import 'header.scss';
 main{
     padding-top: 66px;
-    background-image: url('/src/media/index_background.svg');
+    background-image: url('/src/media/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(92vh - 14px);
@@ -9,16 +9,6 @@ main{
     flex-direction: column;
     justify-content: space-between;
     
-}
-main::after {
-    content: '';
-    position: absolute;
-    top: 81px;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,.7);
-    z-index: 2;
-    height: calc(92vh - 14px);
 }
 section {
     position: relative;
@@ -49,12 +39,14 @@ p{
     font-weight: 900;
 }
 .cards_wrappder{
-    width: 1170px;
     margin-left: auto;
     margin-right: auto;
     margin-top: to-vw(65);
     
     bottom: 0;
+}
+.card{
+    margin-right: 30px;
 }
 .cards_wrappder p {
     color: white;
@@ -153,12 +145,38 @@ p{
     line-height: 21px;
     margin-bottom: 12px;
 }
+@media(max-width:1115px){
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    main{
+        height: calc(95vh - 12px);
+    }
+    .header-left>div{
+        margin-left: 20px;
+    }
+}
 @media (max-width:769px){
     .socials{
         margin-left: 10px;
     }
     header .email{
         display: none;
+    }
+    main{
+        height: unset;
+    }
+    .header-left>div{
+        margin-left: 20px;
     }
 }
 @media (max-width:500px){
@@ -186,19 +204,17 @@ p{
         flex-direction: column;
     }
     .second_row{
-        font-size: 40px;
+        font-size: 35px;
     }
     .first_row{
         font-size: 16px;
     }
     .card{
         margin-bottom: 25px;
+        margin-right:0
     }
     main{
         height: unset;
-    }
-    main::after{
-        height: 1414px;
     }
     .lang{
         margin-left: 20px;
