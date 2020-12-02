@@ -164,13 +164,13 @@ a:hover {
 }
 
 .buy_now, header {
-  background-color: #f9b931;
+  background-color: #CF9EFF;
 }
 
 .banner {
   display: flex;
   justify-content: center;
-  background-color: #f9b931;
+  background-color: #CF9EFF;
   padding-top: 46px;
 }
 
@@ -688,7 +688,7 @@ a:hover {
 
 footer {
   height: 195px;
-  background-color: #f9b931;
+  background-color: #CF9EFF;
   padding-top: 26px;
 }
 
@@ -702,7 +702,7 @@ footer .wrapper a {
 }
 
 .btn-secondary {
-  background-color: #f9b931 !important;
+  background-color: #CF9EFF !important;
 }
 
 .header-right {

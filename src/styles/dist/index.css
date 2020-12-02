@@ -28,6 +28,7 @@ header {
 }
 
 .header-right .button {
+  font-size: 12px;
   text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -38,14 +39,16 @@ header {
   font-weight: 700;
 }
 
+.header-left a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .header-left, .phone, .email {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header-left {
-  width: 967px;
 }
 
 .socials {
@@ -248,4 +251,69 @@ p {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 12px;
+}
+
+@media (max-width: 769px) {
+  .socials {
+    margin-left: 10px;
+  }
+
+  header .email {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header .email, header .socials, header .phone {
+    display: none;
+  }
+
+  .header-right .button {
+    font-size: 10px;
+    width: 130px;
+    padding-right: 0px;
+  }
+
+  .header-right .button.button_login {
+    width: 80px;
+  }
+
+  header {
+    padding-left: 0;
+  }
+
+  .banner_logo {
+    width: unset;
+  }
+
+  .cards_wrappder {
+    width: unset;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .second_row {
+    font-size: 40px;
+  }
+
+  .first_row {
+    font-size: 16px;
+  }
+
+  .card {
+    margin-bottom: 25px;
+  }
+
+  main {
+    height: unset;
+  }
+
+  main::after {
+    height: 1414px;
+  }
+
+  .lang {
+    margin-left: 20px;
+  }
 }

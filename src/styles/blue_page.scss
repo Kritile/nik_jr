@@ -24,6 +24,7 @@ header{
     justify-content: space-between;
     height: 60px;
 }
+
 .header-right .button{
     margin-top: 12px;
     display: flex;
@@ -72,12 +73,12 @@ a:hover{
     margin-right: unset !important;
 }
 .buy_now,header{
-    background-color: rgb(249,185,49);
+    background-color: #61C6FF;
 }
 .banner{
     display: flex;
     justify-content: center;
-    background-color: rgb(249,185,49);
+    background-color: #61C6FF;
     padding-top: 46px;
 }
 .banner .right img {
@@ -519,7 +520,7 @@ a:hover{
 }
 footer{
     height: 195px;
-    background-color:  rgb(249,185,49);
+    background-color:  #61C6FF;
     padding-top: 26px;
 }
 footer .wrapper{
@@ -531,7 +532,7 @@ footer .wrapper a{
     color: black;
 }
 .btn-secondary{
-    background-color:rgb(249,185,49) !important;
+    background-color:#61C6FF !important;
 }
 .header-right{
     display: flex;

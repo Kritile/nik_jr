@@ -153,3 +153,54 @@ p{
     line-height: 21px;
     margin-bottom: 12px;
 }
+@media (max-width:769px){
+    .socials{
+        margin-left: 10px;
+    }
+    header .email{
+        display: none;
+    }
+}
+@media (max-width:500px){
+    header .email, header .socials,header .phone{
+        display: none;
+    }
+    .header-right .button{
+        font-size: 10px;
+        width: 130px;
+        padding-right: 0px;
+    }
+    .header-right .button.button_login{
+        width: 80px; 
+    }
+    header{
+        padding-left:0;
+    }
+    .banner_logo{
+        width: unset;
+    }
+    .cards_wrappder{
+        width: unset;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .second_row{
+        font-size: 40px;
+    }
+    .first_row{
+        font-size: 16px;
+    }
+    .card{
+        margin-bottom: 25px;
+    }
+    main{
+        height: unset;
+    }
+    main::after{
+        height: 1414px;
+    }
+    .lang{
+        margin-left: 20px;
+    }
+}
