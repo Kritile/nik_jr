@@ -18,6 +18,22 @@ header{
     padding-top: 0;
     padding-bottom: 0;
     width: 80%;
+    justify-content: space-between;
+}
+.socials{
+    margin-left: unset;
+}
+.icon img{
+    margin-right: 9px;
+}
+.header-left > div:not(.socials) > a::after, .header-left .socials::after{
+    margin-right: 5px !important;
+}
+.quest.active{
+    border-color: #61C6FF !important;
+}
+.quest.active .answer{
+    display: block;
 }
 .header{
     display: flex;
@@ -323,13 +339,14 @@ a:hover{
 .comp .arrows{
     display: flex;
     justify-content: space-between;
-    width: calc(100vw - 270px);
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
 }
 .comp .prev, .comp .next{
     font-size: 14px;
     line-height: 21px;
+    margin-right: 30px;
 }
 .comp_list{
     display: flex;

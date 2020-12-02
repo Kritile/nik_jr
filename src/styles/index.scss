@@ -4,7 +4,7 @@ main{
     background-image: url('/src/media/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(92vh - 14px);
+    height: 58vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,25 +88,25 @@ p{
 }
 
 .card:first-child::before {
-    background-image: url('/src/media/logo_yel.svg');
+    background-image: url('/src/media/yellow_eye.png');
 }
 .card:nth-child(2) .body {
     background-color: #61C6FF;
 }
 .card:nth-child(2)::before {
-    background-image: url('/src/media/logo_bl.svg');
+    background-image: url('/src/media/blue_eye.png');
 }
 .card:nth-child(3) .body {
     background-color: #FF768F;
 }
 .card:nth-child(3)::before {
-    background-image: url('/src/media/logo_pink.svg');
+    background-image: url('/src/media/pink_eye.png');
 }
 .card:last-child .body {
     background-color: #CF9EFF;
 }
 .card:last-child::before {
-    background-image: url('/src/media/logo_pe.svg');
+    background-image: url('/src/media/perple_eye.png');
 }
 .card_buuton{
     display: flex;

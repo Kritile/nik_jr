@@ -2,10 +2,10 @@
 
 document.querySelectorAll('.quest .arrow').forEach(function (item) {
   item.addEventListener('click', function (event) {
-    if (event.target.parentElement.parentElement.nextElementSibling.style.display == 'none') {
-      event.target.parentElement.parentElement.nextElementSibling.style.display = 'block';
+    if (!event.target.parentElement.parentElement.parentElement.classList.contains('active')) {
+      event.target.parentElement.parentElement.parentElement.classList.add('active');
     } else {
-      event.target.parentElement.parentElement.nextElementSibling.style.display = 'none';
+      event.target.parentElement.parentElement.parentElement.classList.remove('active');
     }
   });
 });
