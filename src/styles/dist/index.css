@@ -86,6 +86,11 @@ header {
     margin-right: 45px;
   }
 }
+@media (max-width: 500px) {
+  .header .logo img {
+    width: 85px;
+  }
+}
 main {
   padding-top: 66px;
   background-image: url("/src/media/bg.png");

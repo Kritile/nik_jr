@@ -70,3 +70,8 @@ header{
         margin-right: 45px;
     }
 }
+@media (max-width:500px){
+    .header .logo img{
+        width: 85px;
+    }
+}

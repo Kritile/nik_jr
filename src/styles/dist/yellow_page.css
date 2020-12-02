@@ -81,6 +81,16 @@ header {
   margin-right: 15px;
 }
 
+@media (min-width: 1199px) {
+  .header-left > div {
+    margin-right: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .header .logo img {
+    width: 85px;
+  }
+}
 .next, .prev, .arrow, .ann, .mout, .login_bottom {
   cursor: pointer;
 }
