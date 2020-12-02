@@ -77,6 +77,15 @@ header {
   color: black;
 }
 
+.dropdown-item img {
+  margin-right: 15px;
+}
+
+@media (min-width: 1199px) {
+  .header-left > div {
+    margin-right: 45px;
+  }
+}
 main {
   padding-top: 66px;
   background-image: url("/src/media/index_background.svg");

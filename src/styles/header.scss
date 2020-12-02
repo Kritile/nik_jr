@@ -62,3 +62,11 @@ header{
     background-image: url("/src/media/arrow.svg");
     color: black;
 }
+.dropdown-item img{
+    margin-right: 15px;
+}
+@media(min-width:1199px){
+    .header-left > div{
+        margin-right: 45px;
+    }
+}

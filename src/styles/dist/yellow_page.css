@@ -77,6 +77,10 @@ header {
   color: black;
 }
 
+.dropdown-item img {
+  margin-right: 15px;
+}
+
 .next, .prev, .arrow, .ann, .mout, .login_bottom {
   cursor: pointer;
 }
