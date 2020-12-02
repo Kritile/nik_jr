@@ -718,14 +718,66 @@ header .header-right .button_login {
 
 @media screen and (max-width: 1113px) {
   .header .logo {
-    margin-left: 70px;
+    margin-left: 58px;
   }
 
-  .banner .right {
-    width: 45%;
+  .banner {
+    align-items: center;
+  }
+
+  .banner .right img {
+    width: 92%;
   }
 
   .banner > .left {
-    width: 40%;
+    width: 60%;
+    margin-left: 10px;
+  }
+
+  .find .wrapper .right img {
+    width: 90%;
+  }
+
+  .find .wrapper .left {
+    margin-left: 10px;
+  }
+
+  .comp_list .row {
+    flex-wrap: unset !important;
+  }
+
+  .comp_list .row div img {
+    width: 100%;
+  }
+
+  .comp_list .row div:first-child {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 769px) {
+  .socials {
+    margin-left: 10px;
+  }
+
+  header .email {
+    display: none;
+  }
+
+  .header .logo {
+    margin-left: 10px;
+  }
+
+  .banner .right img {
+    width: 92%;
+  }
+
+  .banner .right {
+    display: none;
+    width: 92%;
+  }
+
+  .banner > .left {
+    width: 100%;
+    margin-left: 10px;
   }
 }
