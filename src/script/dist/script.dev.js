@@ -1,11 +1,66 @@
 "use strict";
 
 document.querySelectorAll('.quest .arrow').forEach(function (item) {
+  item.addEventListener('click', function (event) {});
+});
+document.querySelectorAll('.quest').forEach(function (item) {
   item.addEventListener('click', function (event) {
-    if (!event.target.parentElement.parentElement.parentElement.classList.contains('active')) {
-      event.target.parentElement.parentElement.parentElement.classList.add('active');
-    } else {
-      event.target.parentElement.parentElement.parentElement.classList.remove('active');
+    if (event.target.classList.contains('arrow')) {
+      if (!event.target.parentElement.parentElement.parentElement.classList.contains('active')) {
+        event.target.parentElement.parentElement.parentElement.classList.add('active');
+        event.target.parentElement.parentElement.parentElement.querySelector('.arrow_img:not(.active)').style = 'transform:rotate(180deg)';
+      } else {
+        event.target.parentElement.parentElement.parentElement.classList.remove('active');
+        event.target.parentElement.parentElement.parentElement.querySelector('.arrow_img:not(.active)').style = 'transform:none';
+      }
+    }
+
+    if (event.target.classList.contains('quest')) {
+      if (!event.target.classList.contains('active')) {
+        event.target.classList.add('active');
+        event.target.querySelector('.arrow_img:not(.active)').style = 'display:none';
+        event.target.querySelector('.arrow_img.active').style = 'display:block';
+      } else {
+        event.target.classList.remove('active');
+        event.target.querySelector('.arrow_img:not(.active)').style = 'display:block';
+        event.target.querySelector('.arrow_img.active').style = 'transform:none';
+      }
+    }
+
+    if (event.target.classList.contains('ask')) {
+      if (!event.target.parentElement.parentElement.classList.contains('active')) {
+        event.target.parentElement.parentElement.classList.add('active');
+        event.target.parentElement.parentElement.querySelector('.arrow_img:not(.active)').style = 'display:none';
+        event.target.parentElement.parentElement.querySelector('.arrow_img.active').style = 'display:block';
+      } else {
+        event.target.parentElement.parentElement.classList.remove('active');
+        event.target.parentElement.parentElement.querySelector('.arrow_img:not(.active)').style = 'display:block';
+        event.target.parentElement.parentElement.querySelector('.arrow_img.active').style = 'display:none';
+      }
+    }
+
+    if (event.target.classList.contains('title')) {
+      if (!event.target.parentElement.classList.contains('active')) {
+        event.target.parentElement.classList.add('active');
+        event.target.parentElement.querySelector('.arrow_img:not(.active)').style = 'display:none';
+        event.target.parentElement.querySelector('.arrow_img.active').style = 'display:block';
+      } else {
+        event.target.parentElement.classList.remove('active');
+        event.target.parentElement.querySelector('.arrow_img:not(.active)').style = 'display:block';
+        event.target.parentElement.querySelector('.arrow_img.active').style = 'display:none';
+      }
+    }
+
+    if (event.target.classList.contains('arrow_img')) {
+      if (!event.target.parentElement.parentElement.parentElement.classList.contains('active')) {
+        event.target.parentElement.parentElement.parentElement.classList.add('active');
+        event.target.parentElement.querySelector('.arrow_img:not(.active)').style = 'display:none';
+        event.target.parentElement.querySelector('.arrow_img.active').style = 'display:block';
+      } else {
+        event.target.parentElement.parentElement.parentElement.classList.remove('active');
+        event.target.parentElement.querySelector('.arrow_img:not(.active)').style = 'display:block';
+        event.target.parentElement.querySelector('.arrow_img.active').style = 'display:none';
+      }
     }
   });
 });

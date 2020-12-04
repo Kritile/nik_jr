@@ -45,8 +45,23 @@ header{
     margin-top: 12px;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 36px;
     width: 170px;
+}
+.arrow_img.active{
+    display: none;
+}
+.free_mouth{
+    width: 88px;
+    height: 16px;
+    border-radius: 16px;
+    font-size: 10px;
+    line-height: 12px;
+    background: #F9B931;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-right .button_login{
     width: 70px;
@@ -261,10 +276,7 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
 }
-.images__wrapper .image .stars{
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
+
 .images__wrapper .image .name{
     text-align: center;
     font-weight: 600;
@@ -324,10 +336,18 @@ a:hover{
     line-height: 21px;
     color:rgb(154,157,159)
 }
+
 .comp{
+    width: 71vw;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 57px;
+    
+}
+.comp__wrapper{
     background-color:#F9F9F9;
 }
+
 .comp > .title{
     text-align: center;
     font-weight: 800;
@@ -339,7 +359,6 @@ a:hover{
 .comp .arrows{
     display: flex;
     justify-content: space-between;
-    width: 70vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -357,12 +376,16 @@ a:hover{
 }
 .comp_list .row{
     margin-bottom: 30px;
+    width: 100%;
 }
 .comp_list .row:first-child{
     margin-top: 26px;
 }
 .comp_list .row div{
     margin-right: 30px;
+}
+.comp_list .row div:last-child{
+    margin-right: 0;
 }
 .comp_list:not(.active){
     display: none;
@@ -447,8 +470,60 @@ a:hover{
 }
 .switch .free_mouth{
     position: absolute;
-    top: -14px;
+    top: -9px;
     right: 30px;
+}
+.buy_now__wrapper{
+    background-color:  #61C6FF;
+}
+.buy_now{
+    background: black;
+    display: flex;
+    width: 218px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.buy_now .left{
+    font-family: 'Roboto';
+}
+.buy_now .left .top{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.buy_now .left .bottom{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+.buy_now .right{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    padding-left: 8px;
+}
+.find_button{
+    width: 230px;
+    height: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249,185,49);
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 4px;
+}
+.login_bottom .find_button{
+    width: 255px;
 }
 .switch .border{
     display: flex;
@@ -559,6 +634,12 @@ header .header-right .button_login{
     margin-right: 10px;
     background-color: white;
     border: none ;
+}
+@media (min-width:1199px){
+    .header-left > div{
+        margin-left: 24px;
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 1113px) {
     .header .logo{
@@ -709,5 +790,3 @@ header .header-right .button_login{
         width: unset;
     }
 }
-
-

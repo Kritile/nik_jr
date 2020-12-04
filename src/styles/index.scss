@@ -1,14 +1,21 @@
 @import 'header.scss';
+body{
+    height: 100%;
+}
 main{
+    height: calc(100% - 80px);
     padding-top: 66px;
-    background-image: url('/src/media/bg.png');
+    background-image: url('/../../../src/media/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 58vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
+}
+.email a:hover, .phone a:hover{
+    color:black;
+    text-decoration: none;
 }
 section {
     position: relative;
@@ -23,30 +30,39 @@ section {
     text-align: center;
 }
 .banner_logo img {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 }
 p{
     margin: unset;
 }
 
 .first_row{
-    margin-bottom: 25px;
+
     font-size: 24px;
     font-weight: 400;
 }
 .second_row{
     font-size: 56px;
     font-weight: 900;
+    font-family: 'SF Heavy';
+    letter-spacing: 2px;
 }
 .cards_wrappder{
     margin-left: auto;
     margin-right: auto;
     margin-top: to-vw(65);
-    
+    width: 70%;
     bottom: 0;
 }
 .card{
-    margin-right: 30px;
+    border:none
+}
+.card:hover{
+    text-decoration: none;
+}
+.card:hover .title,.card:hover .card_buuton span{
+    opacity: .25;
+    transition: 0.2s;
 }
 .cards_wrappder p {
     color: white;
@@ -63,7 +79,7 @@ p{
 }
 .card{
     position: relative;
-    width: 270px
+    width: calc(95%/4);
 }
 .card .header {
     height: 21px;
@@ -109,37 +125,20 @@ p{
     background-image: url('/src/media/perple_eye.png');
 }
 .card_buuton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 222px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-    background: black;
-    border-radius: 5px;
-    margin-bottom: 25px;
-    height: 48px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
+    width: 82%;
 }
-.card_buuton:visited{
-    text-decoration: none;
-}
-.card_buuton:hover{
-    color: rgba(255,255,255, .12);
-    transition: 0.3s;
-    text-decoration: none;
-}
+
+
 .card .title{
     font-size: 32px;
     line-height: 21px;
     margin-bottom: 16px;
+    font-family: 'SF Heavy';
+    text-transform: capitalize;
 }
+
 .card .desc{
     font-size: 14px;
     line-height: 21px;
@@ -166,6 +165,7 @@ p{
     }
 }
 @media (max-width:769px){
+    
     .socials{
         margin-left: 10px;
     }
@@ -199,6 +199,9 @@ p{
     }
     .cards_wrappder{
         width: unset;
+    }
+    .card{
+        width: 100%;
     }
     .cards{
         flex-direction: column;

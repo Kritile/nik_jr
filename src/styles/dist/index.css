@@ -2,6 +2,10 @@
   font-family: "SF Pro";
   src: url("/src/media/fonts/SF-Pro-Display-Regular.otf");
 }
+@font-face {
+  font-family: "SF Heavy";
+  src: url("/src/media/fonts/SF-UI-Display-Heavy.ttf");
+}
 * {
   font-family: "SF Pro";
 }
@@ -20,6 +24,52 @@ body {
 
 .dropdown-menu.active {
   display: block;
+}
+
+.card_buuton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 222px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  height: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.lent {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  background: #5FAB17;
+  width: 128.45px;
+  height: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 1px;
+  left: -45px;
+}
+
+.card_buuton:visited {
+  text-decoration: none;
+}
+
+.card_buuton:hover {
+  text-decoration: none;
+  color: white;
 }
 
 header a {
@@ -84,6 +134,13 @@ header {
   border: none;
 }
 
+.images__wrapper .image .stars {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .dropdown-toggle::after {
   background-image: url("/src/media/arrow.svg");
   color: black;
@@ -103,15 +160,24 @@ header {
     width: 85px;
   }
 }
+body {
+  height: 100%;
+}
+
 main {
+  height: calc(100% - 80px);
   padding-top: 66px;
-  background-image: url("/src/media/bg.png");
+  background-image: url("/../../../src/media/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 58vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.email a:hover, .phone a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 section {
@@ -129,7 +195,7 @@ section {
 }
 
 .banner_logo img {
-  margin-bottom: 48px;
+  margin-bottom: 50px;
 }
 
 p {
@@ -137,7 +203,6 @@ p {
 }
 
 .first_row {
-  margin-bottom: 25px;
   font-size: 24px;
   font-weight: 400;
 }
@@ -145,17 +210,29 @@ p {
 .second_row {
   font-size: 56px;
   font-weight: 900;
+  font-family: "SF Heavy";
+  letter-spacing: 2px;
 }
 
 .cards_wrappder {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.3854166667vw;
+  width: 70%;
   bottom: 0;
 }
 
 .card {
-  margin-right: 30px;
+  border: none;
+}
+
+.card:hover {
+  text-decoration: none;
+}
+
+.card:hover .title, .card:hover .card_buuton span {
+  opacity: 0.25;
+  transition: 0.2s;
 }
 
 .cards_wrappder p {
@@ -174,7 +251,7 @@ p {
 
 .card {
   position: relative;
-  width: 270px;
+  width: calc(95%/4);
 }
 
 .card .header {
@@ -230,39 +307,17 @@ p {
 }
 
 .card_buuton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 222px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  background: black;
-  border-radius: 5px;
-  margin-bottom: 25px;
-  height: 48px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-}
-
-.card_buuton:visited {
-  text-decoration: none;
-}
-
-.card_buuton:hover {
-  color: rgba(255, 255, 255, 0.12);
-  transition: 0.3s;
-  text-decoration: none;
+  width: 82%;
 }
 
 .card .title {
   font-size: 32px;
   line-height: 21px;
   margin-bottom: 16px;
+  font-family: "SF Heavy";
+  text-transform: capitalize;
 }
 
 .card .desc {
@@ -336,6 +391,10 @@ p {
 
   .cards_wrappder {
     width: unset;
+  }
+
+  .card {
+    width: 100%;
   }
 
   .cards {
