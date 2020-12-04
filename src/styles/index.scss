@@ -5,13 +5,13 @@ body{
 main{
     height: calc(100% - 80px);
     padding-top: 66px;
-    background-image: url('/../../../src/media/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
+}
+header{
+    background-color: white;
 }
 .email a:hover, .phone a:hover{
     color:black;
@@ -50,7 +50,7 @@ p{
 .cards_wrappder{
     margin-left: auto;
     margin-right: auto;
-    margin-top: to-vw(65);
+    margin-top: 10px;
     width: 70%;
     bottom: 0;
 }
@@ -60,7 +60,7 @@ p{
 .card:hover{
     text-decoration: none;
 }
-.card:hover .title,.card:hover .card_buuton span{
+.card:hover .card_buuton span{
     opacity: .25;
     transition: 0.2s;
 }
@@ -129,7 +129,16 @@ p{
     margin-right: auto;
     width: 82%;
 }
-
+.main__wrapper{
+    background-image: url('/../../../src/media/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 
 .card .title{
     font-size: 32px;
@@ -143,22 +152,25 @@ p{
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 12px;
+    text-transform: capitalize;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 @media(max-width:1115px){
     .cards{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
         padding-left: 15px;
         padding-right: 15px;
     }
     .card{
         margin-bottom: 30px;
+        width: 45%;
     }
     main{
-        height: calc(95vh - 12px);
+        height: calc(100% - 80px);
     }
     .header-left>div{
         margin-left: 20px;
