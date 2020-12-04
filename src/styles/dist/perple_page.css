@@ -6,6 +6,14 @@
   font-family: "SF Heavy";
   src: url("/src/media/fonts/SF-UI-Display-Heavy.ttf");
 }
+@font-face {
+  font-family: "SF Medium";
+  src: url("/src/media/fonts/SF-UI-Text-Medium.ttf");
+}
+@font-face {
+  font-family: "SF Bold";
+  src: url("/src/media/fonts/SF-UI-Text-Bold.ttf");
+}
 * {
   font-family: "SF Pro";
 }
@@ -65,6 +73,10 @@ body {
 
 .card_buuton:visited {
   text-decoration: none;
+}
+
+.quest .title {
+  font-family: "SF Bold";
 }
 
 .card_buuton:hover {
@@ -753,6 +765,7 @@ a:hover {
 }
 
 .find_button {
+  font-family: "SF Medium";
   width: 230px;
   height: 48px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

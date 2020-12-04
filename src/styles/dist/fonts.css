@@ -10,3 +10,7 @@
   font-family: "SF Medium";
   src: url("/src/media/fonts/SF-UI-Text-Medium.ttf");
 }
+@font-face {
+  font-family: "SF Bold";
+  src: url("/src/media/fonts/SF-UI-Text-Bold.ttf");
+}
